@@ -15,7 +15,27 @@ export default function Hero() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-red">
+    <div className="h-screen">
+      <div className="absolute inset-0 -z-10 overflow-hidden blur-3xl">
+        {/* Top-left shape */}
+        <div
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+          className="absolute top-0 left-0 aspect-[1155/678] w-[36.125rem] max-w-none rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+        />
+
+        {/* Bottom-right shape */}
+        <div
+          style={{
+            clipPath:
+              "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+          }}
+          className="absolute bottom-0 right-0 aspect-[1155/678] w-[36.125rem] max-w-none -rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
+        />
+      </div>
+
       <header className="absolute inset-x-0 top-0 z-50">
         <nav
           aria-label="Global"
@@ -48,9 +68,9 @@ export default function Hero() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-white">
+            {/* <a href="#" className="text-sm font-semibold leading-6 text-white">
               Log in <span aria-hidden="true">&rarr;</span>
-            </a>
+            </a> */}
           </div>
         </nav>
         <Dialog
@@ -124,11 +144,16 @@ export default function Hero() {
             src="src/assets/Yellow-Portrait-modified.png"
             className="h-36 w-auto m-auto"
           />
-          <img
+          {/* <img
             alt=""
             src="src/assets/SVGs/Retro Vintage Circle.svg"
             className=" w-auto h-80 m-auto absolute right-80  top-16 opacity-80 textgray -z-50 textgr"
-          />
+          /> */}
+          {/* <img
+            alt=""
+            src="src/assets/SVGs/Dots Icon 4380981.svg"
+            className="absolute h-80 right-96  top-24  -z-50 opacity-80"
+          /> */}
           <div className="hidden sm:mb-8 sm:flex sm:justify-center z-10"></div>
           <div className="text-center">
             <h1 className="text-balance text-5xl font-semibold tracking-tight text-white sm:text-7xl">
@@ -140,7 +165,7 @@ export default function Hero() {
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <a
-                href="#"
+                href="#projects"
                 className="rounded-md bg-[#ffc100] px-3.5 py-2.5 text-sm font-semibold text-black shadow-sm hover:bg-yellow-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Get started

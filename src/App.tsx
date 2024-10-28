@@ -2,12 +2,19 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+
 import Hero from "./Components/Hero/Hero";
+import Projects from "./Components/Projects/Projects";
+import ContactForm from "./Components/Contact/ContactForm/ContactForm";
+import Footer from "./Components/Footer/footer";
 
 function App() {
   return (
     <>
-      <Hero></Hero>
+      <Hero />
+      <Projects />
+      <ContactForm />
+      <Footer />
     </>
   );
 }
