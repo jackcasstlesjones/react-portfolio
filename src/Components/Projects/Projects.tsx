@@ -15,6 +15,7 @@ const Projects = () => {
       title: "zubi",
       image: zubi,
       tech: "TypeScript, React, Tailwind CSS, SQLite, PassportJS",
+      copy: "Zubi is the prototype for a platform to connect volunteer tutors with underprivileged learners. When a student logs onto the site, they view a specific tutor's availability and make a booking for an available slot. This full stack app uses an SQLite database, features authentication using PassportJS in the backend, and has a carefully designed frontend built with React, Tailwind CSS and TailwindUI.",
     },
     {
       title: "Wedgy",
