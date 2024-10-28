@@ -1,8 +1,8 @@
 const Footer = () => {
   console.log("hello");
   return (
-    <div className="w-screen bg-[#386641] h-32">
-      <h4 className="m-auto max-w-xl text-center pt-14 font-normal text-lg">
+    <div className="w-screen bg-[#386641] h-24 flex justify-center items-center">
+      <h4 className="m-auto max-w-xl text-center  font-normal text-lg">
         {"Made by "}
         <a
           className="hover:text-slate-400"
