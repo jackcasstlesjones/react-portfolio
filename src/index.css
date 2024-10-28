@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-[#00061b]  text-white font-sans; /* Tailwind CSS classes applied */
+}
