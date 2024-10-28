@@ -10,7 +10,7 @@ export default function ProjectSection({ project }) {
   return (
     <div
       id="projects"
-      className=" w-full relative isolate overflow-hidden bg-slate-200 px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0"
+      className=" w-full relative isolate overflow-hidden py-24 sm:py-32 lg:overflow-visible lg:px-0"
     >
       <div className="absolute inset-0 -z-10 overflow-hidden">
         {/* <svg
@@ -50,10 +50,10 @@ export default function ProjectSection({ project }) {
               {/* <p className="text-base font-semibold leading-7 text-[#386641]">
                 Deploy faster
               </p> */}
-              <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl hover:text-[#386641] hover:cursor-pointer">
+              <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-50 sm:text-5xl hover:text-jackYellow hover:cursor-pointer">
                 {project.title}
               </h1>
-              <p className="mt-6 text-xl leading-8 text-gray-700">
+              <p className="mt-6 text-xl leading-8 text-gray-50">
                 {project.tech}
               </p>
             </div>
@@ -68,16 +68,16 @@ export default function ProjectSection({ project }) {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-base leading-7 text-gray-900 lg:max-w-lg">
+            <div className="max-w-xl text-base leading-7 text-gray-50 lg:max-w-lg">
               <p>{project.copy}</p>
-              <ul role="list" className="mt-8 space-y-8 text-gray-600">
+              <ul role="list" className="mt-8 space-y-8 text-gray-50">
                 <li className="flex gap-x-3">
                   <AcademicCapIcon
                     aria-hidden="true"
-                    className="mt-1 h-5 w-5 flex-none text-[#386641]"
+                    className="mt-1 h-5 w-5 flex-none text-jackYellow"
                   />
                   <span>
-                    <strong className="font-semibold text-gray-900">
+                    <strong className="font-semibold text-gray-100">
                       Learn with the best.
                     </strong>{" "}
                     An engaging resource that uses a panzoom library.
@@ -86,10 +86,10 @@ export default function ProjectSection({ project }) {
                 <li className="flex gap-x-3">
                   <CursorArrowRaysIcon
                     aria-hidden="true"
-                    className="mt-1 h-5 w-5 flex-none text-[#386641]"
+                    className="mt-1 h-5 w-5 flex-none text-jackYellow"
                   />
                   <span>
-                    <strong className="font-semibold text-gray-900">
+                    <strong className="font-semibold text-gray-50">
                       Full Stack App.
                     </strong>{" "}
                     Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
@@ -99,10 +99,10 @@ export default function ProjectSection({ project }) {
                 <li className="flex gap-x-3">
                   <ServerIcon
                     aria-hidden="true"
-                    className="mt-1 h-5 w-5 flex-none text-[#386641]"
+                    className="mt-1 h-5 w-5 flex-none text-jackYellow"
                   />
                   <span>
-                    <strong className="font-semibold text-gray-900">
+                    <strong className="font-semibold text-gray-50">
                       Database backups.
                     </strong>{" "}
                     Ac tincidunt sapien vehicula erat auctor pellentesque
@@ -117,7 +117,7 @@ export default function ProjectSection({ project }) {
                 et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
                 et ut. Ac lorem vel integer orci.
               </p>
-              <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-900">
+              <h2 className="mt-16 text-2xl font-bold tracking-tight text-gray-100">
                 Who is it for?
               </h2>
               <p className="mt-6">

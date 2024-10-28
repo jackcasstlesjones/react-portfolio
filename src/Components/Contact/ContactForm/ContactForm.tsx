@@ -22,7 +22,7 @@ export default function ContactForm() {
   const [agreed, setAgreed] = useState(false);
 
   return (
-    <div className="isolate bg-slate-100 px-6 py-24 sm:py-32 lg:px-8">
+    <div className="isolate bg-gray-900 px-6 py-24 sm:py-32 lg:px-8">
       {/* <div
         aria-hidden="true"
         className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]"
@@ -36,7 +36,7 @@ export default function ContactForm() {
         />
       </div> */}
       <div className="mx-auto max-w-2xl text-center">
-        <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+        <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-50 sm:text-5xl">
           Get in touch with me
         </h2>
         {/* <p className="mt-2 text-lg leading-8 text-gray-600">
@@ -52,7 +52,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="first-name"
-              className="block text-sm font-semibold leading-6 text-gray-900"
+              className="block text-sm font-semibold leading-6 text-gray-50"
             >
               First name
             </label>
@@ -69,7 +69,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="last-name"
-              className="block text-sm font-semibold leading-6 text-gray-900"
+              className="block text-sm font-semibold leading-6 text-gray-50"
             >
               Last name
             </label>
@@ -86,7 +86,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <label
               htmlFor="company"
-              className="block text-sm font-semibold leading-6 text-gray-900"
+              className="block text-sm font-semibold leading-6 text-gray-50"
             >
               Company
             </label>
@@ -103,7 +103,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <label
               htmlFor="email"
-              className="block text-sm font-semibold leading-6 text-gray-900"
+              className="block text-sm font-semibold leading-6 text-gray-50"
             >
               Email
             </label>
@@ -120,7 +120,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <label
               htmlFor="phone-number"
-              className="block text-sm font-semibold leading-6 text-gray-900"
+              className="block text-sm font-semibold leading-6 text-gray-50"
             >
               Phone number
             </label>
@@ -155,7 +155,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <label
               htmlFor="message"
-              className="block text-sm font-semibold leading-6 text-gray-900"
+              className="block text-sm font-semibold leading-6 text-gray-50"
             >
               Message
             </label>
@@ -174,12 +174,12 @@ export default function ContactForm() {
               <Switch
                 checked={agreed}
                 onChange={setAgreed}
-                className="group flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-900/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 data-[checked]:bg-indigo-600"
+                className="group flex w-8 flex-none cursor-pointer rounded-full bg-gray-200 p-px ring-1 ring-inset ring-gray-50/5 transition-colors duration-200 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 data-[checked]:bg-indigo-600"
               >
                 <span className="sr-only">Agree to policies</span>
                 <span
                   aria-hidden="true"
-                  className="h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-900/5 transition duration-200 ease-in-out group-data-[checked]:translate-x-3.5"
+                  className="h-4 w-4 transform rounded-full bg-white shadow-sm ring-1 ring-gray-50/5 transition duration-200 ease-in-out group-data-[checked]:translate-x-3.5"
                 />
               </Switch>
             </div>
@@ -195,7 +195,7 @@ export default function ContactForm() {
         <div className="mt-10">
           <button
             type="submit"
-            className="block w-full rounded-md bg-[#386641] px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            className="block w-full rounded-md bg-jackYellow px-3.5 py-2.5 text-center text-sm font-semibold text-gray-900 shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
           >
             Let's talk
           </button>
