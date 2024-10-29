@@ -1,5 +1,5 @@
 import ProjectSection from "./ProjectSection/ProjectSection";
-import olympiaTree from "../../assets/olympiatree.png";
+import olympiaTree from "../../assets/olympiatree2.png";
 import zubi from "../../assets/zubi3.png";
 import wedgy from "../../assets/wedgy.png";
 
