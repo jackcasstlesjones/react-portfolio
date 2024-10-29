@@ -97,14 +97,14 @@ export default function ProjectSection({ project }: ProjectSectionProps) {
               <img
                 alt=""
                 src={project.image}
-                className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] cursor-pointer"
+                className="w-full  max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] cursor-pointer"
               />
             </a>
           ) : (
             <img
               alt=""
               src={project.image}
-              className="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] "
+              className="w-full max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] "
             />
           )}
         </div>
