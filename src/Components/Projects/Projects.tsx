@@ -84,7 +84,6 @@ const Projects = () => {
         console.log(project.title, index);
         return <ProjectSection project={project} />;
       })}
-      {/* <ProjectSection imageSrc={olympiaTree} content={content} key={index} /> */}
     </>
   );
 };
