@@ -108,10 +108,10 @@ export default function ContactForm() {
                   <option>CA</option>
                   <option>EU</option>
                 </select>
-                <ChevronDownIcon
+                {/* <ChevronDownIcon
                   aria-hidden="true"
                   className="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                />
+                /> */}
               </div>
               <input
                 id="phone-number"
