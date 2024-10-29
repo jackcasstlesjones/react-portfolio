@@ -1,12 +1,10 @@
 import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
   ServerIcon,
   AcademicCapIcon,
   CursorArrowRaysIcon,
 } from "@heroicons/react/20/solid";
 
-function getIcon(icon) {
+function getIcon(icon: string) {
   switch (icon) {
     case "hat":
       return (
@@ -33,8 +31,27 @@ function getIcon(icon) {
       return null; // Or a default icon if you want one
   }
 }
+// Define the Project type
+interface Bullet {
+  heading: string;
+  info: string;
+  icon: string;
+}
 
-export default function ProjectSection({ project }) {
+interface Project {
+  title: string;
+  image: string;
+  tech: string;
+  copy: string;
+  link?: string;
+  bullets: Bullet[];
+}
+
+// Use the Project type in the ProjectSection component's props
+interface ProjectSectionProps {
+  project: Project;
+}
+export default function ProjectSection({ project }: ProjectSectionProps) {
   return (
     <div
       id="projects"
@@ -98,10 +115,10 @@ export default function ProjectSection({ project }) {
               {/* <p className="text-base font-semibold leading-7 text-[#386641]">
                 Deploy faster
               </p> */}
-              <h1 className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-jackYellow sm:text-5xl hover:text-jackYellow hover:cursor-pointer">
+              <h1 className="mt-2 tracking-normal text-pretty text-4xl font-semibold  text-jackYellow sm:text-5xl hover:text-jackYellow hover:cursor-pointer">
                 {project.title}
               </h1>
-              <p className="mt-6 text-2xl leading-8 text-gray-50">
+              <p className="mt-6 text-2xl leading-8 tracking-wide text-gray-50">
                 {project.tech}
               </p>
             </div>
@@ -126,7 +143,7 @@ export default function ProjectSection({ project }) {
         </div>
         <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
           <div className="lg:pr-4">
-            <div className="max-w-xl text-lg leading-7 text-gray-50 lg:max-w-lg">
+            <div className="max-w-xl text-lg leading-relaxed text-gray-50 lg:max-w-lg">
               <p>{project.copy}</p>
               <ul role="list" className="mt-8 space-y-8 text-gray-50">
                 {project.bullets.map((bullet) => {
