@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import yellowPortrait from "../../assets/Yellow-Portrait-modified.png";
 
 const navigation = [
   { name: "About", href: "#" },
@@ -139,11 +140,7 @@ export default function Hero() {
           />
         </div> */}
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <img
-            alt=""
-            src="src/assets/Yellow-Portrait-modified.png"
-            className="h-36 w-auto m-auto"
-          />
+          <img alt="" src={yellowPortrait} className="h-36 w-auto m-auto" />
           {/* <img
             alt=""
             src="src/assets/SVGs/Retro Vintage Circle.svg"
