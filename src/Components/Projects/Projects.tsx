@@ -54,7 +54,7 @@ const Projects = () => {
       ],
     },
     {
-      title: "Wedgy [WIP]",
+      title: "Wedgy",
       image: wedgy,
       tech: "TypeScript, React, Tailwind CSS, Figma, Express",
       copy: "Designed and built the website for musical outfit Wedgy. This involved a lengthy design process to make sure that the product fitted the band's music. Integrated a tour calendar using third-party React components, as well as integrating Bandcamp and social links to increase conversion rates.",
@@ -66,13 +66,13 @@ const Projects = () => {
           icon: "hat",
         },
         {
-          heading: "Tour integration",
-          info: "Stay up-to-date with upcoming gigs using a custom tour calendar.",
+          heading: "Performance focused",
+          info: "Compressed assets and performant code ensure seamless experience.",
           icon: "mouse",
         },
         {
-          heading: "Social engagement",
-          info: "Embedded social links and Bandcamp to drive audience interaction.",
+          heading: "Musical engagement",
+          info: "Embedded Bandcamp to drive audience interaction.",
           icon: "box",
         },
       ],
