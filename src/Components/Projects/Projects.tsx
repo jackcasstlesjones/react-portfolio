@@ -58,6 +58,7 @@ const Projects = () => {
       image: wedgy,
       tech: "TypeScript, React, Tailwind CSS, Figma, Express",
       copy: "Designed and built the website for musical outfit Wedgy. This involved a lengthy design process to make sure that the product fitted the band's music. Integrated a tour calendar using third-party React components, as well as integrating Bandcamp and social links to increase conversion rates.",
+      link: "https://wedgy.netlify.app/",
       bullets: [
         {
           heading: "Bespoke design",
